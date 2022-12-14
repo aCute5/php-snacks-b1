@@ -108,6 +108,9 @@ function checkMail($Mail)
             <?= checkMail($userMail) ?>
         </div>
     </form>
+    <!-- SNACK 4 -->
+
+
 
 </body>
 
