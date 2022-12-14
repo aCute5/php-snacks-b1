@@ -14,10 +14,11 @@ $arrMatches = [
     "scoret4" => "100",
 ];
 
-$userMail = isset($_GET["email"]);
+
 function checkMail($Mail)
 {
-    if ($Mail) {
+    if (isset($_GET["email"])) {
+        $Mail = isset($_GET["email"]);
         $messageRight = " email corretta";
         $messageWrong = "email sbagliata";
 
@@ -110,6 +111,11 @@ function checkMail($Mail)
     </form>
     <!-- SNACK 4 -->
 
+
+    <!-- SNACK 1 WITH LOOP -->
+    <!-- for ($i = 0; $i < count($arrMatches); $i++) { -->
+    <!-- echo $arrMatches[$i]; -->
+    <!-- } -->
 
 
 </body>
